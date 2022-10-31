@@ -65,7 +65,8 @@
             	<c:forEach var="activity" items="${allActivities}">
 	                <a href="/posts/${activity.activityName.toLowerCase()}/${activity.id}">
 		                <div class="activity" onmouseover="activityMouseover(this)" onmouseout="activityMouseout(this)">
-		                	<img src="/images/activities/${activity.activityName}.png" alt="${activity.activityName}">
+		                	<%-- <img src="images/activities/${activity.activityName.toLowerCase()}.png" alt="${activity.activityName}"> --%>
+		                	<img src="https://raw.githubusercontent.com/haroldschuler/OutdoorAdventures/main/src/main/resources/static/images/activities/${activity.activityName.toLowerCase()}.png" alt="${activity.activityName}">
 		                	<h5>${activity.activityName}</h5>
 		                </div>
 	                </a>
