@@ -1,4 +1,4 @@
-# OutdoorAdventures
+# Outdoor Adventures
 
 Welcome to Outdoor Adventures! This is a site that allows outdoor enthusiasts to create and search blog posts by activity and the gear used.
 
