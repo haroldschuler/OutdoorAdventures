@@ -59,7 +59,7 @@
     <div class="content flex-column align-items-center">
         <div class="search_results_title_bar transparent_box">
             <h1>${chosenCategory.category}</h1>
-            <h4>Here are some adventures using ${chosenCategtory.category.toLowerCase()} :</h4>
+            <h4>Here are some adventures using ${chosenCategory.category.toLowerCase()}:</h4>
         </div>
         <div class="posts_container">
         	<c:forEach var="post" items="${allPosts}">

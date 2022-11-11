@@ -17,6 +17,7 @@ public class MainController {
 	@Autowired
 	private GearCategoryService gearCatService;
 	
+//	Home Page
 	@GetMapping("/")
 	public String home(
 			Model model,
@@ -29,20 +30,11 @@ public class MainController {
 	}
 	
 	
-//	****************WORK ON THIS TO ADD A LIST OF ALL GEAR CATEGORIES**************
+//	Displays the list of gear categories
 	@GetMapping("/gear")
 	public String searchGear(Model model, HttpSession session) {
 		session.setAttribute("currentPage", "/");
 		model.addAttribute("allGearCategories",gearCatService.getAllGearCategories());
 		return "searchGearCategories.jsp";
 	}
-	
-//	Can use this by adding a button to test functions
-//	@PostMapping("/test")
-//	public String test(
-//			HttpSession session) {
-//		
-//		System.out.println(session.getAttribute("userId"));
-//		return "redirect:/";
-//	}
 }
